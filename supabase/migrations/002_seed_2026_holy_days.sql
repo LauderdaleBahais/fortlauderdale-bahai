@@ -1,0 +1,15 @@
+-- Seed 2026 Bahá'í Holy Days (same 13 observances as 2025, current year for forward-looking calendar)
+insert into events (title, description, start_time, end_time, status, is_holy_day) values
+('Ayyám-i-Há (Days of Ha)', 'A period of preparation before the Bahá''í Fast, associated with hospitality, charity, and gift-giving.', '2026-02-26 00:00:00+00', '2026-03-01 23:59:59+00', 'approved', true),
+('The Bahá''í Fast', 'A period of fasting observed by Bahá''ís from sunrise to sunset as an act of spiritual discipline. Adults (15–70) abstain from food and drink during daylight hours.', '2026-03-02 00:00:00+00', '2026-03-20 23:59:59+00', 'approved', true),
+('Naw-Rúz (Bahá''í New Year)', 'The Bahá''í New Year, coinciding with the vernal equinox. One of the nine holy days on which work is suspended.', '2026-03-20 00:00:00+00', '2026-03-20 23:59:59+00', 'approved', true),
+('First Day of Ridván', 'The first day of the Festival of Ridván, commemorating Bahá''u''lláh''s declaration of His mission in the Garden of Ridván in Baghdad in 1863. Work is suspended.', '2026-04-21 00:00:00+00', '2026-04-21 23:59:59+00', 'approved', true),
+('Ninth Day of Ridván', 'The ninth day of the Festival of Ridván, when Bahá''u''lláh''s family joined Him in the Garden of Ridván. Work is suspended.', '2026-04-29 00:00:00+00', '2026-04-29 23:59:59+00', 'approved', true),
+('Twelfth Day of Ridván', 'The final day of the Festival of Ridván, marking Bahá''u''lláh''s departure from the Garden. Work is suspended.', '2026-05-02 00:00:00+00', '2026-05-02 23:59:59+00', 'approved', true),
+('Declaration of the Báb', 'Commemorates the evening in 1844 when the Báb declared His mission to Mullá Husayn in Shiraz, Iran. Work is suspended.', '2026-05-23 00:00:00+00', '2026-05-23 23:59:59+00', 'approved', true),
+('Ascension of Bahá''u''lláh', 'Commemorates the passing of Bahá''u''lláh on May 29, 1892. Observed at 3:00 a.m. Work is suspended.', '2026-05-29 00:00:00+00', '2026-05-29 23:59:59+00', 'approved', true),
+('Martyrdom of the Báb', 'Commemorates the execution of the Báb on July 9, 1850, in Tabriz, Iran. Observed at noon. Work is suspended.', '2026-07-09 00:00:00+00', '2026-07-09 23:59:59+00', 'approved', true),
+('Birth of the Báb', 'One of the Twin Holy Birthdays. Commemorates the birth of Siyyid Ali-Muhammad (the Báb) in 1819. Work is suspended.', '2026-10-20 00:00:00+00', '2026-10-20 23:59:59+00', 'approved', true),
+('Birth of Bahá''u''lláh', 'One of the Twin Holy Birthdays. Commemorates the birth of Mirza Husayn-Ali (Bahá''u''lláh) in 1817. Work is suspended.', '2026-10-21 00:00:00+00', '2026-10-21 23:59:59+00', 'approved', true),
+('Day of the Covenant', 'A day set apart by Bahá''u''lláh to honor ''Abdu''l-Bahá as the Center of the Covenant. Not a holy day on which work is suspended.', '2026-11-26 00:00:00+00', '2026-11-26 23:59:59+00', 'approved', true),
+('Ascension of ''Abdu''l-Bahá', 'Commemorates the passing of ''Abdu''l-Bahá on November 28, 1921. Not a holy day on which work is suspended.', '2026-11-28 00:00:00+00', '2026-11-28 23:59:59+00', 'approved', true);

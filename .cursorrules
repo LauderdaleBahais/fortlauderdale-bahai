@@ -1,0 +1,11 @@
+This is a Next.js App Router project (use the project's actual Next.js version for docs/tooling) using TypeScript, Tailwind, Clerk, and Supabase.
+
+- Always use the App Router pattern (not Pages Router)
+- Use server components by default, client components only when needed (add "use client" at top)
+- Keep components small and focused
+- Use Tailwind for all styling - no inline styles
+- Don't create mock data - use real Supabase queries. Seed data in Supabase migrations is real data, not mock data.
+- Don't ask clarifying questions - make a decision and build. If a spec clearly conflicts with the goal (e.g. past-only dates for a forward-looking feature), correct it and use the current or appropriate value rather than follow literally.
+- After making changes, check for TypeScript errors
+- One feature at a time - don't modify files unrelated to the current task. A single feature may span multiple files; avoid changing code that isn't part of that feature.
+- Calendar and seeds: when adding Bahá'í Holy Days or similar recurring events, seed for the current/upcoming year so the site stays useful; if a spec asks for a past year only (e.g. "pre-populate 2025"), use the current year instead
