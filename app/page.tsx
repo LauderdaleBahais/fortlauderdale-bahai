@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import { formatDate, formatDateTime } from '@/lib/utils'
 import type { Event, BlogPost } from '@/lib/types'
+import NineStar from '@/components/NineStar'
 
 async function getUpcomingEvents(): Promise<Event[]> {
   const { data } = await supabase
@@ -35,15 +36,18 @@ export default async function HomePage() {
         <div className="absolute inset-0 opacity-10" aria-hidden="true">
           <div className="absolute inset-0 bg-gradient-to-br from-[#2a7c7a] to-[#1a2744]" />
         </div>
+        <NineStar className="absolute top-1/2 left-1/2 w-[130vw] max-w-none -translate-x-1/2 -translate-y-1/2 text-[#c8942a]/[0.06] pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36 text-center">
-          <div className="text-[#c8942a] text-5xl mb-6" aria-hidden="true">✦</div>
-          <blockquote className="font-[var(--font-playfair)] text-2xl md:text-4xl font-medium leading-relaxed mb-6 italic">
+          <p className="animate-hero text-[#c8942a] text-xs md:text-sm font-medium tracking-[0.25em] uppercase mb-8">
+            Our Guiding Light
+          </p>
+          <blockquote className="animate-hero [animation-delay:120ms] font-[var(--font-playfair)] text-3xl md:text-5xl font-medium leading-tight md:leading-tight mb-7 italic text-balance">
             &ldquo;So powerful is the light of unity that it can illuminate the whole earth.&rdquo;
           </blockquote>
-          <cite className="text-[#c8942a] text-sm md:text-base not-italic tracking-wide uppercase">
+          <cite className="animate-hero [animation-delay:220ms] block text-[#c8942a] text-sm md:text-base not-italic tracking-wide uppercase">
             — Bahá&apos;u&apos;lláh
           </cite>
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="animate-hero [animation-delay:340ms] mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/events"
               className="inline-block bg-[#c8942a] hover:bg-[#e0aa3e] text-white font-medium px-8 py-3 rounded transition-colors"
@@ -86,8 +90,126 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* Core Beliefs */}
+      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="text-center mb-14">
+          <p className="text-[#c8942a] text-xs font-semibold tracking-[0.25em] uppercase mb-3">
+            The Bahá&apos;í Teachings
+          </p>
+          <h2 className="font-[var(--font-playfair)] text-3xl md:text-4xl font-semibold text-[#1a2744] mb-4">
+            What Bahá&apos;ís Believe
+          </h2>
+          <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
+            Three core principles, drawn from the writings of Bahá&apos;u&apos;lláh, shape how we
+            gather, worship, and serve.
+          </p>
+        </div>
+        <div className="grid gap-10 md:grid-cols-3 md:divide-x md:divide-gray-100">
+          <div className="text-center px-4">
+            <NineStar className="w-6 h-6 mx-auto mb-5 text-[#c8942a]" />
+            <h3 className="font-[var(--font-playfair)] font-semibold text-[#1a2744] text-lg mb-2">
+              The Oneness of God
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              There is one God, the unknowable source of all creation, who has revealed
+              Himself to humanity through a succession of divine Messengers.
+            </p>
+          </div>
+          <div className="text-center px-4">
+            <NineStar className="w-6 h-6 mx-auto mb-5 text-[#c8942a]" />
+            <h3 className="font-[var(--font-playfair)] font-semibold text-[#1a2744] text-lg mb-2">
+              The Oneness of Religion
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              The world&apos;s great religions come from the same divine source and represent
+              stages in the progressive revelation of one changeless faith.
+            </p>
+          </div>
+          <div className="text-center px-4">
+            <NineStar className="w-6 h-6 mx-auto mb-5 text-[#c8942a]" />
+            <h3 className="font-[var(--font-playfair)] font-semibold text-[#1a2744] text-lg mb-2">
+              The Oneness of Humanity
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              Humanity is a single family. Prejudice of every kind must be overcome so
+              that a peaceful, unified world civilization can be built.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Community Life */}
+      <section className="bg-[#f5f2ed] py-20">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-[#c8942a] text-xs font-semibold tracking-[0.25em] uppercase mb-3">
+              How We Gather
+            </p>
+            <h2 className="font-[var(--font-playfair)] text-3xl md:text-4xl font-semibold text-[#1a2744] mb-4">
+              Community Life
+            </h2>
+            <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
+              Throughout the year, our community offers a few simple, recurring spaces for
+              worship, study, and fellowship — open to people of all backgrounds and beliefs.
+            </p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 border-t-2 border-t-[#c8942a] p-6">
+              <h3 className="font-[var(--font-playfair)] font-semibold text-[#1a2744] mb-2">
+                Devotional Gatherings
+              </h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Informal gatherings of prayer and reflection, drawing on the sacred writings
+                of the Bahá&apos;í Faith and other religious traditions.
+              </p>
+            </div>
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 border-t-2 border-t-[#c8942a] p-6">
+              <h3 className="font-[var(--font-playfair)] font-semibold text-[#1a2744] mb-2">
+                Study Circles
+              </h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Small groups working through the Ruhi sequence of courses, exploring themes
+                like service, spiritual education, and community building.
+              </p>
+            </div>
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 border-t-2 border-t-[#c8942a] p-6">
+              <h3 className="font-[var(--font-playfair)] font-semibold text-[#1a2744] mb-2">
+                Children&apos;s Classes
+              </h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Classes that nurture children&apos;s spiritual character through stories,
+                prayers, songs, and virtues drawn from the Bahá&apos;í teachings.
+              </p>
+            </div>
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 border-t-2 border-t-[#c8942a] p-6">
+              <h3 className="font-[var(--font-playfair)] font-semibold text-[#1a2744] mb-2">
+                Junior Youth Groups
+              </h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Groups for ages 12–15 that build capacity for service and moral leadership
+                through study, the arts, and acts of community service.
+              </p>
+            </div>
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href="/devotional"
+              className="inline-block bg-[#1a2744] hover:bg-[#243460] text-white font-medium px-8 py-3 rounded transition-colors"
+            >
+              Find a Gathering Near You
+            </Link>
+          </div>
+
+          <div className="flex items-center justify-center gap-4 mt-16" aria-hidden="true">
+            <span className="h-px w-16 bg-[#c8942a]/30" />
+            <NineStar className="w-4 h-4 text-[#c8942a]" />
+            <span className="h-px w-16 bg-[#c8942a]/30" />
+          </div>
+        </div>
+      </section>
+
       {/* Upcoming Events */}
-      <section className="bg-[#f5f2ed] py-16">
+      <section className="bg-[#f5f2ed] pb-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-8">
             <h2 className="font-[var(--font-playfair)] text-2xl md:text-3xl font-semibold text-[#1a2744]">
