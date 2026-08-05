@@ -86,6 +86,112 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* Core Beliefs */}
+      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="text-center mb-12">
+          <h2 className="font-[var(--font-playfair)] text-3xl md:text-4xl font-semibold text-[#1a2744] mb-4">
+            What Bahá&apos;ís Believe
+          </h2>
+          <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
+            Three core principles, drawn from the writings of Bahá&apos;u&apos;lláh, shape how we
+            gather, worship, and serve.
+          </p>
+        </div>
+        <div className="grid gap-8 md:grid-cols-3">
+          <div className="text-center px-4">
+            <div className="text-[#c8942a] text-3xl mb-4" aria-hidden="true">✦</div>
+            <h3 className="font-[var(--font-playfair)] font-semibold text-[#1a2744] text-lg mb-2">
+              The Oneness of God
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              There is one God, the unknowable source of all creation, who has revealed
+              Himself to humanity through a succession of divine Messengers.
+            </p>
+          </div>
+          <div className="text-center px-4">
+            <div className="text-[#c8942a] text-3xl mb-4" aria-hidden="true">✦</div>
+            <h3 className="font-[var(--font-playfair)] font-semibold text-[#1a2744] text-lg mb-2">
+              The Oneness of Religion
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              The world&apos;s great religions come from the same divine source and represent
+              stages in the progressive revelation of one changeless faith.
+            </p>
+          </div>
+          <div className="text-center px-4">
+            <div className="text-[#c8942a] text-3xl mb-4" aria-hidden="true">✦</div>
+            <h3 className="font-[var(--font-playfair)] font-semibold text-[#1a2744] text-lg mb-2">
+              The Oneness of Humanity
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              Humanity is a single family. Prejudice of every kind must be overcome so
+              that a peaceful, unified world civilization can be built.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Community Life */}
+      <section className="bg-[#f5f2ed] py-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-[var(--font-playfair)] text-3xl md:text-4xl font-semibold text-[#1a2744] mb-4">
+              Community Life
+            </h2>
+            <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
+              Throughout the year, our community offers a few simple, recurring spaces for
+              worship, study, and fellowship — open to people of all backgrounds and beliefs.
+            </p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-6">
+              <h3 className="font-[var(--font-playfair)] font-semibold text-[#1a2744] mb-2">
+                Devotional Gatherings
+              </h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Informal gatherings of prayer and reflection, drawing on the sacred writings
+                of the Bahá&apos;í Faith and other religious traditions.
+              </p>
+            </div>
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-6">
+              <h3 className="font-[var(--font-playfair)] font-semibold text-[#1a2744] mb-2">
+                Study Circles
+              </h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Small groups working through the Ruhi sequence of courses, exploring themes
+                like service, spiritual education, and community building.
+              </p>
+            </div>
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-6">
+              <h3 className="font-[var(--font-playfair)] font-semibold text-[#1a2744] mb-2">
+                Children&apos;s Classes
+              </h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Classes that nurture children&apos;s spiritual character through stories,
+                prayers, songs, and virtues drawn from the Bahá&apos;í teachings.
+              </p>
+            </div>
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-6">
+              <h3 className="font-[var(--font-playfair)] font-semibold text-[#1a2744] mb-2">
+                Junior Youth Groups
+              </h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Groups for ages 12–15 that build capacity for service and moral leadership
+                through study, the arts, and acts of community service.
+              </p>
+            </div>
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href="/devotional"
+              className="inline-block bg-[#1a2744] hover:bg-[#243460] text-white font-medium px-8 py-3 rounded transition-colors"
+            >
+              Find a Gathering Near You
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Upcoming Events */}
       <section className="bg-[#f5f2ed] py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
